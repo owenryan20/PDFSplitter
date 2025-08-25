@@ -38,7 +38,7 @@ mvn -q clean package
 This produces a shaded runnable JAR:
 
 ```
-target/pdf-range-splitter.jar
+target/pdf-splitter.jar
 ```
 
 ---
@@ -47,17 +47,17 @@ target/pdf-range-splitter.jar
 
 ### Basic
 ```bash
-java -jar target/pdf-range-splitter.jar   --input /path/to/input.pdf   --ranges "158-171, 172-184, 185-195"
+java -jar target/pdf-splitter.jar   --input /path/to/input.pdf   --ranges "158-171, 172-184, 185-195"
 ```
 
 ### With output directory
 ```bash
-java -jar target/pdf-range-splitter.jar   -i input.pdf -r "1-3, 10-12" -o out/
+java -jar target/pdf-splitter.jar   -i input.pdf -r "1-3, 10-12" -o out/
 ```
 
 ### With password
 ```bash
-java -jar target/pdf-range-splitter.jar   -i secret.pdf -r "5-10" -p "hunter2"
+java -jar target/pdf-splitter.jar   -i secret.pdf -r "5-10" -p "hunter2"
 ```
 
 ---
